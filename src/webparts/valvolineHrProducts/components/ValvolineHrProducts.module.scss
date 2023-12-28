@@ -1,0 +1,101 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+:root {
+	--borderRadius: 0.25rem;
+	--borderSize: 2px;
+	--height: 260px;
+	--width: 280px;
+
+	--font: Arial, "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, sans-serif;
+
+	--black: hsl(0, 0%, 15%);
+	--grey: hsl(0, 0%, 53%);
+	--lightGrey: hsl(180, 4%, 91%);
+	--white: hsl(200, 69%, 97%);
+
+	--BaseColor: hsl(210, 100%, 28%);
+	--darkColor: hsl(207, 36%, 41%);
+	--lightColor: hsl(204, 52%, 51%);
+	--transparent: hsla(0, 0%, 0%, 0.2);
+}
+
+// Reset
+.valvolineHrProducts {
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.valvolineHrProducts {
+	&.teams {
+		font-family: $ms-font-family-fallbacks;
+	}
+	color: "[theme:bodyText, default: #323130]";
+	color: var(--bodyText);
+	overflow: hidden;
+}
+
+.cardRow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card > div {
+	align-items: flex-start;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.mainTitle {
+	color: var(--darkColor);
+	//font-size: 1rem;
+	font-weight: 790;
+	//text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+}
+
+.resourceType {
+	color: var(--darkColor);
+	font-size: 0.6rem;
+	font-weight: 800;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.userArea > img {
+	height: 20px;
+	width: 20px;
+	margin-left: 5%;
+}
+
+.title:hover {
+	text-decoration: underline !important;
+	cursor: pointer !important;
+}
+
+.hiddenLink {
+	color: var(--lightColor) !important;
+	text-decoration: none !important;
+}
+
+.usersText {
+	font-size: 10pt;
+	font-weight: 600;
+}
+
+.titleArea {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	margin-left: 5%;
+	//width: calc((var(--width) / 7) * 3);
+}
+
+.iconArea > img {
+	width: 50%;
+}

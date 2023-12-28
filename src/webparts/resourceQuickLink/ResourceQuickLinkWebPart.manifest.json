@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "0318eaee-6e50-4f78-8a92-594a3faf934f",
+  "alias": "ResourceQuickLinkWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "ResourceQuickLink" },
+    "description": { "default": "ResourceQuickLink description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "listName":"",
+      "description": "--Resource Quick Links Title Here--"
+    }
+  }]
+}

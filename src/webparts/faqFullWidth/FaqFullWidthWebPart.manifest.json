@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "68025111-9ea6-4126-8335-36f642e19346",
+  "alias": "FaqFullWidthWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "faqFullWidth" },
+    "description": { "default": "faqFullWidth description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "--FAQ Title Here--",
+      "listName":"",
+      "inputTitleFontSize":"1.75",
+      "lists":"lists",
+      "titleCSS":"font-weight:bold; color:#01426a; white-space: nowrap; padding-bottom:1.3em;"
+    }
+  }]
+}

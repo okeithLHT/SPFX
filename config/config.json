@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "faq-full-width-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/faqFullWidth/FaqFullWidthWebPart.js",
+          "manifest": "./src/webparts/faqFullWidth/FaqFullWidthWebPart.manifest.json"
+        }
+      ]
+    },
+    "resource-quick-link-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/resourceQuickLink/ResourceQuickLinkWebPart.js",
+          "manifest": "./src/webparts/resourceQuickLink/ResourceQuickLinkWebPart.manifest.json"
+        }
+      ]
+    },
+    "valvoline-hr-filter-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/valvolineHrFilter/ValvolineHrFilterWebPart.js",
+          "manifest": "./src/webparts/valvolineHrFilter/ValvolineHrFilterWebPart.manifest.json"
+        }
+      ]
+    },
+    "valvoline-hr-products-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/valvolineHrProducts/ValvolineHrProductsWebPart.js",
+          "manifest": "./src/webparts/valvolineHrProducts/ValvolineHrProductsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FaqFullWidthWebPartStrings": "lib/webparts/faqFullWidth/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ResourceQuickLinkWebPartStrings": "lib/webparts/resourceQuickLink/loc/{locale}.js",
+    "ValvolineHrFilterWebPartStrings": "lib/webparts/valvolineHrFilter/loc/{locale}.js",
+    "ValvolineHrProductsWebPartStrings": "lib/webparts/valvolineHrProducts/loc/{locale}.js"
+  }
+}
